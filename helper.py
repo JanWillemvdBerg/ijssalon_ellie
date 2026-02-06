@@ -5,3 +5,15 @@ def docereer(tekst=''):
     print(f"* {tekst} *")
     print(lengte * "*")
     print()
+
+def fooi_pp(bedrag, personen):
+    try:
+        bedrag_pp = bedrag/personen
+    except: 
+        bedrag_pp = "??"
+    return f"het bedrag per persoon is {bedrag_pp} euro"
+
+b = int(input("Welk bedrag zit er in de fooienpot? "))
+p = int(input("Aantal personen? "))
+
+print(fooi_pp(b,p))
