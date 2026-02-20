@@ -1,4 +1,5 @@
-def docereer(tekst=''):
+def decoreer(tekst=""):
+    tekst="header"
     lengte = len(tekst) + 4
     print()
     print(lengte * "*")
@@ -7,13 +8,14 @@ def docereer(tekst=''):
     print()
 
 def fooi_pp(bedrag, personen):
-    try:
-        bedrag_pp = bedrag/personen
-    except: 
-        bedrag_pp = "??"
-    return f"het bedrag per persoon is {bedrag_pp} euro"
+    bedrag_pp = bedrag/personen
+    return f"Het bedrag per persoon is {bedrag_pp} euro"
 
-b = int(input("Welk bedrag zit er in de fooienpot? "))
-p = int(input("Aantal personen? "))
+def onderstreep(tekst = ""):
+    uit = []
+    uit.append(tekst)
+    uit.append(len(tekst) * "=")
+    return uit
 
-print(fooi_pp(b,p))
+def som(dict):
+    return (sum(dict.values()))
